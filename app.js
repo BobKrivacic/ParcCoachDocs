@@ -45,7 +45,7 @@ var doServerTokenAuth = function(req, res, next) {
 
 // device API 
 
-deviceApp.get('/consent', fileAPI.approvalForm);
+deviceApp.get('/privacypolicy', fileAPI.privacyPolicy);
 deviceApp.get('/termsofuse', fileAPI.termsOfUse);
 
 // Add headers

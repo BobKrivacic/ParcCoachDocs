@@ -35,13 +35,13 @@
       },
       controller: 'PatientsController',
     })
-    .state('installation', {
-      url: '/installation',
+    .state('privacypolicy', {
+      url: '/privacypolicy',
       templateUrl: function($stateParams) {
-        $stateParams.state='installation';
-        $stateParams.title="Installation Instructions";
+        $stateParams.state='privacypolicy';
+        $stateParams.title="Privacy Policy";
         $stateParams.showType = 'all';
-        return 'views/layouts/installation.html';
+        return 'views/layouts/privacy-policy.html';
       },
       controller: 'PatientsController',
     })

@@ -1,6 +1,7 @@
 var fs = require('fs');
 
-var approvalFn = "./client/views/layouts/consent-form.pdf";
+var approvalFn = "./client/views/layouts/terms-of-use.pdf";
+var privacyPolicyFn = "./client/views/layouts/privacy-policy.pdf";
 
 exports.readFileSync = function(fn) {
   console.log("*** read file Sync: " + fn);
@@ -20,7 +21,7 @@ exports.readJsonFile = function(fn, resultFn, errorFn) {
   });
 }
 
-exports.approvalForm = function(req, res) {
+exports.privacyPolicy = function(req, res) {
   var data;
   try {
     data = fs.readFileSync(approvalFn);
@@ -36,7 +37,7 @@ exports.approvalForm = function(req, res) {
 exports.termsOfUse = function(req, res) {
   var data;
   try {
-    data = fs.readFileSync(approvalFn);
+    data = fs.readFileSync(privacyPolicyFn);
     res.writeHead(200, {'Content-Type': 'application/pdf' });
     res.end(data);  
     return;
