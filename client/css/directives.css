@@ -1,0 +1,568 @@
+a {
+  color: #82b92c;
+  text-decoration: none;
+}
+a:hover {
+  color: #82b92c;
+  text-decoration: none;
+}
+a.active {
+  color: #dedede;
+}
+[ui-sref],
+[ng-click] {
+  cursor: pointer;
+}
+.primary {
+  color: #82b92c !important;
+}
+.gray-medium {
+  color: #dedede !important;
+}
+@media (min-width: 1000px) {
+  .fivecols .col-xs-2 {
+    width: 20%;
+    *width: 20%;
+  }
+}
+table td {
+  border-top: 0px !important;
+}
+#loader {
+  position: fixed;
+  top: 70px;
+  height: 40px;
+  background: #edef48;
+  color: black;
+  width: 123px;
+  left: 50%;
+  z-index: 1031;
+  margin-left: -50px;
+  text-align: center;
+  padding-top: 10px;
+  -webkit-box-shadow: 0px 8px 25px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 0px 8px 25px rgba(50, 50, 50, 0.75);
+  box-shadow: 0px 8px 25px rgba(50, 50, 50, 0.75);
+}
+#loader img {
+  float: left;
+  margin: 2px -12px 0 12px;
+}
+.navbar .nav a .caret {
+  border-top-color: white;
+}
+.navbar {
+  background-color: #82b92c;
+  border: 0px;
+}
+.navbar a {
+  color: white;
+}
+.nav > li.active {
+  background: #94c83d;
+}
+.nav > li > a,
+.nav > li > a {
+  -webkit-transition: background 0.15s ease;
+  -moz-transition: background 0.15s ease;
+  -ms-transition: background 0.15s ease;
+  transition: background 0.15s ease;
+}
+.nav > li > a:hover,
+.nav > li > a:focus {
+  background: #94c83d;
+}
+.nav .open > a,
+.nav .open > a:hover,
+.nav .open > a:focus {
+  background: #94c83d;
+}
+.dropdown-menu li > a:hover,
+.dropdown-menu li > a:focus,
+.dropdown-submenu:hover > a {
+  background: #94c83d;
+}
+.filterBar li {
+  float: left;
+  list-style: none;
+  text-transform: uppercase;
+}
+.filterBar > li {
+  margin: 0px 45px 12px -26px;
+}
+.filterBar li a {
+  color: #aaa;
+  font-size: 15px;
+}
+.filterBar .caret {
+  border-top-color: #aaa !important;
+}
+.pageHeader {
+  margin-top: 90px;
+}
+.pageHeader h1 {
+  height: 40px;
+  margin-top: 0px;
+}
+.pageHeader .breadcrumbs {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: #c8c8c8;
+}
+.pageHeader .breadcrumbs .link {
+  color: #82b92c;
+}
+.pageHeader h1 label {
+  font-size: 22px;
+  font-weight: normal;
+  color: #c8c8c8;
+}
+.kpi {
+  font-size: 56px;
+  font-weight: 300;
+  border-top: 1px solid #676767;
+  border-bottom: 1px solid #676767;
+  border-right: 0;
+  cursor: pointer;
+  padding-top: 10px;
+  margin-bottom: 35px;
+  height: 180px;
+  color: #676767;
+}
+.kpi.selected {
+  background: #efefef;
+}
+.kpi {
+  -webkit-transition: background 0.15s ease;
+  -moz-transition: background 0.15s ease;
+  -ms-transition: background 0.15s ease;
+  transition: background 0.15s ease;
+}
+.kpi:hover {
+  background: #efefef;
+}
+.kpi h3 {
+  margin-bottom: -8px;
+  color: black;
+}
+.kpi label {
+  font-size: 20px;
+  margin-left: -15px;
+  font-weight: 200;
+  text-transform: lowercase;
+}
+.table .thead > div {
+  border: 1px solid #dedede;
+  font-weight: bold;
+  font-size: 14px;
+  border-right: 0px;
+  padding: 10px 0 10px 0;
+  text-align: center;
+}
+.table .thead > div label {
+  font-size: 11px;
+  margin-bottom: auto;
+  text-transform: lowercase;
+  color: #676767;
+}
+.table .thead > div:last-child {
+  border-right: 1px solid #dedede;
+}
+.table .tbody h3 {
+  margin-top: -5px;
+}
+.table .tbody label {
+  font-size: 10px;
+}
+.table .tbody > div {
+  padding-top: 25px;
+  height: 87px;
+  font-weight: bold;
+}
+.table .divider > div {
+  height: 95px;
+  margin-top: 26px;
+}
+.table div[ui-sref] {
+  -webkit-transition: background 0.15s ease;
+  -moz-transition: background 0.15s ease;
+  -ms-transition: background 0.15s ease;
+  transition: background 0.15s ease;
+}
+.table div[ui-sref]:hover {
+  background: #efefef;
+}
+.mapWrapper {
+  position: relative;
+  padding-top: 30px;
+}
+.mapWrapper .enforceMarker {
+  color: white;
+  font-size: 15px !important;
+  padding-top: 30px;
+  padding-left: 3px;
+  text-align: center;
+}
+.mapWrapper .enforceMarkerSmall {
+  color: white;
+  font-size: 12px !important;
+  padding-top: 30px;
+  padding-left: 3px;
+  text-align: center;
+}
+.mapWrapper .mapControls {
+  -webkit-transition: height 0.3s ease;
+  -moz-transition: height 0.3s ease;
+  -ms-transition: height 0.3s ease;
+  transition: height 0.3s ease;
+  height: 30px;
+  margin-top: -30px;
+  position: absolute;
+  z-index: 100;
+  left: 15px;
+  right: 15px;
+  background: #222222;
+  opacity: 0.75;
+}
+.mapWrapper .mapControls .open {
+  text-align: center;
+  font-size: 12px;
+  height: 30px;
+  width: 100%;
+  color: white;
+  cursor: pointer;
+  margin-top: 7px;
+}
+.mapWrapper .mapControls .controls {
+  display: none;
+  color: #eeeeee;
+  margin-left: 20px;
+}
+.mapWrapper .mapControls .controls label {
+  font-weight: normal;
+  font-size: 12px;
+}
+.mapWrapper .mapControls .controls title {
+  font-weight: bold;
+  font-size: 14px;
+}
+.mapFilters {
+  border-top: 1px solid #dedede;
+  padding-top: 21px;
+  margin: 37px 0 0 0;
+}
+.mapPopupWrapper {
+  height: 70px;
+  width: 150px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.mapPopupWrapper::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+.mapPopupWrapper::-webkit-scrollbar:vertical {
+  width: 11px;
+}
+.mapPopupWrapper::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  border: 2px solid white;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.mapPopupWrapper::-webkit-scrollbar-track {
+  background-color: #fff;
+  border-radius: 8px;
+}
+.ui-autocomplete-category {
+  font-weight: bold;
+  padding: .2em .4em;
+  margin: .8em 0 .2em;
+  line-height: 1.5;
+}
+.angularView {
+  min-height: 100px;
+}
+.angularView .mapTableToggle {
+  margin-bottom: 15px;
+}
+.notes {
+  padding-top: 18px;
+  padding-bottom: 28px;
+  border-top: 1px solid #dedede;
+  color: #676767;
+}
+.notes .tag {
+  background: #efefef;
+  padding: 5px;
+  margin-right: 5px;
+}
+.notes h4 {
+  color: #82b92c;
+}
+.notes label {
+  color: #676767;
+  font-size: 12px;
+}
+.note_box {
+  width: 100%;
+  height: 75px;
+}
+.notes .tagger {
+  margin-bottom: 20px;
+}
+.divider {
+  border-top: 1px solid #dedede;
+}
+.nolink {
+  cursor: default !important;
+}
+.nolink:hover {
+  background: transparent !important;
+}
+footer {
+  text-align: center;
+  font-size: 12px;
+  margin-bottom: 50px;
+}
+#columns {
+  padding-left: 4px;
+  position: absolute;
+  right: -1px;
+  top: -300px;
+  height: 300px;
+  width: 310px;
+  display: none;
+}
+#columns .slideContainer {
+  position: absolute;
+  bottom: 0px;
+  height: 300px;
+  width: 310px;
+  background: white;
+  border: 1px solid #cccccc;
+  box-shadow: 0px 0px 21px #666;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  display: none;
+}
+#columns::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+#columns::-webkit-scrollbar:vertical {
+  width: 11px;
+}
+#columns::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  border: 2px solid white;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#columns::-webkit-scrollbar-track {
+  background-color: #fff;
+  border-radius: 8px;
+}
+#columns td {
+  text-align: left;
+  font-weight: normal;
+}
+.nav-tabs > li > a:hover,
+.nav-tabs > li > a:focus {
+  background-color: #eeeeee;
+}
+.officerPlanningTable {
+  margin-top: 20px;
+}
+.dayClearPopup {
+  position: absolute;
+  margin-top: -50px;
+  margin-left: 30px;
+  font-size: 12px;
+}
+.dayClearAllPopup {
+  position: absolute;
+  margin-top: -30px;
+  margin-left: 20px;
+  font-size: 12px;
+}
+.dayClearOfficerPopup {
+  position: absolute;
+  margin-top: -30px;
+  margin-left: 20px;
+  font-size: 12px;
+}
+.officerName {
+  display: inline-block;
+  width: 112px;
+  height: 23px;
+  font-weight: bold;
+  position: relative;
+}
+.officerNameHeader {
+  display: inline-block;
+  text-align: left;
+  width: 102px;
+  font-weight: bold;
+  height: 44px;
+}
+.officerNameHeaderShort {
+  vertical-align: middle;
+}
+.officerWeekHeader {
+  display: inline-block;
+  width: 65px;
+  text-align: center;
+  font-weight: bold;
+  height: 44px;
+}
+.officerDaySpacer {
+  display: inline-block;
+  width: 65px;
+}
+.officerHoursSpacer {
+  text-align: right;
+  font-weight: bold;
+  margin-left: -25px;
+}
+.offficerShiftsName {
+  margin-left: 15px;
+  width: 60px;
+}
+.offficerShiftsTotal {
+  margin-left: 0px;
+  text-align: left;
+  width: 75px;
+}
+.officerTotalDaySpacer {
+  text-align: right;
+}
+.officerTotalSpacer {
+  display: inline-block;
+  height: 70px;
+}
+.officerTotalDaySpacerTot {
+  margin-left: 10px;
+  text-align: right;
+  font-weight: bold;
+}
+.totalTopMargin {
+  margin-top: 10px;
+}
+.legend {
+  float: left;
+}
+.legend div {
+  float: left;
+  padding: 10px;
+  margin-right: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 11px;
+}
+.legend div .box {
+  float: left;
+  height: 20px;
+  width: 20px;
+  margin-right: 8px;
+}
+.filledBar {
+  float: left;
+  width: 100%;
+  height: 12px;
+  background: #dedede;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  border-radius: 6px;
+}
+.filledBar span {
+  height: 100%;
+  width: 0;
+  background: #82b92c;
+  float: left;
+  -webkit-transition: width 0.3s ease;
+  -moz-transition: width 0.3s ease;
+  -ms-transition: width 0.3s ease;
+  transition: width 0.3s ease;
+}
+.filledBar span {
+  border-right: 3px solid white;
+}
+.filledBar span:last-of-type {
+  border-right: 0;
+  -webkit-border-top-right-radius: 6px;
+  -webkit-border-bottom-right-radius: 6px;
+  -moz-border-top-right-radius: 6px;
+  -moz-border-bottom-right-radius: 6px;
+  -ms-border-top-right-radius: 6px;
+  -ms-border-bottom-right-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+.filledBar span:first-of-type {
+  -webkit-border-top-left-radius: 6px;
+  -webkit-border-bottom-left-radius: 6px;
+  -moz-border-top-left-radius: 6px;
+  -moz-border-bottom-left-radius: 6px;
+  -ms-border-top-left-radius: 6px;
+  -ms-border-bottom-left-radius: 6px;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+.filledBar .tooltip {
+  font-size: 10px;
+  top: 5px !important;
+}
+.filledBar .tooltip.top {
+  margin-top: auto;
+  padding: 0;
+}
+.filledBar .tooltip-inner {
+  background: none;
+  text-transform: uppercase;
+  color: #777777;
+  font-weight: bold;
+}
+.filledBar .tooltip-arrow {
+  border-top: 0;
+}
+.staticBar {
+  width: 100%;
+  height: 12px;
+}
+.staticBar div {
+  height: 12px;
+  width: 0;
+  position: absolute;
+  background: #82b92c;
+  -webkit-transition: width 0.3s ease;
+  -moz-transition: width 0.3s ease;
+  -ms-transition: width 0.3s ease;
+  transition: width 0.3s ease;
+}
+.staticBar .reverse {
+  right: 15px;
+  left: auto;
+}
+.staticBar .secondary {
+  background: #d6ec16;
+}
+.barTotal {
+  float: right;
+  font-size: 12px;
+  margin-top: -2px;
+  color: #dedede;
+}
+.barLabel {
+  font-size: 10px;
+  position: absolute;
+  left: 15px;
+  top: 39px;
+  font-weight: normal;
+}
+.barLabel strong {
+  font-size: 16px;
+  display: block;
+  margin-bottom: -6px;
+}
+.dropdown.shift a {
+  text-transform: uppercase;
+}

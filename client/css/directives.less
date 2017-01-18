@@ -1,0 +1,109 @@
+@import "variables.less";
+@import "app.less";
+
+// Legend Directive
+.legend {
+  float: left;
+}
+.legend div {
+  float: left;
+  padding: 10px;
+  margin-right: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 11px;
+}
+.legend div .box {
+  float: left;
+  height: 20px;
+  width: 20px;
+  margin-right: 8px;
+}
+
+// Filled Bar Directive
+.filledBar {
+  float: left;
+  width: 100%;
+  height: 12px;
+  background: @gray-medium;
+  .rounded;
+}
+.filledBar span {
+  height: 100%;
+  width: 0;
+  background: @primary;
+  float: left;
+  .animate_width;
+}
+.filledBar span{
+  border-right: 3px solid white;
+}
+.filledBar span:last-of-type{
+  border-right: 0;
+  .rounded-right(6px);
+}
+.filledBar span:first-of-type{
+  .rounded-left(6px);
+}
+.filledBar .tooltip {
+  font-size: 10px;
+  top: 5px !important;
+}
+.filledBar .tooltip.top {
+  margin-top: auto;
+  padding: 0;
+}
+.filledBar .tooltip-inner {
+  background: none;
+  text-transform: uppercase;
+  color: @gray-darker;
+  font-weight: bold;
+}
+.filledBar .tooltip-arrow {
+  border-top: 0;
+}
+
+// Static Bar Directive
+.staticBar {
+  width: 100%;
+  height: 12px;
+}
+.staticBar div {
+  height: 12px;
+  width: 0;
+  position: absolute;
+  background: @primary;
+  .animate_width;
+}
+.staticBar .reverse {
+  right: 15px;
+  left: auto;
+}
+.staticBar .secondary {
+  background: @secondary;
+}
+
+// Labels for Filled Bar and Static Bar Directives
+.barTotal {
+  float: right;
+  font-size: 12px;
+  margin-top: -2px;
+  color: @gray-medium;
+}
+.barLabel {
+  font-size: 10px;
+  position: absolute;
+  left: 15px;
+  top: 39px;
+  font-weight: normal;
+} 
+.barLabel strong {
+  font-size: 16px;
+  display: block;
+  margin-bottom: -6px;
+}
+
+// Shift filter
+.dropdown.shift a {
+	text-transform: uppercase;
+}

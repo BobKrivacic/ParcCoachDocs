@@ -1,0 +1,911 @@
+@import "variables.less";
+
+.modal-dialog {
+  font-size: 18px;  
+  width: 1100px;
+}
+
+.no-padding-left {
+  padding-left: 0px;
+  margin-left: 20px;
+  padding-right: 0px;
+  margin-right: 20px;
+}
+
+.modal-dialog-edit {
+  width: 560px;
+}
+
+.clickable {
+  color: @click_color;  
+}
+
+.menuDiv {
+  position: relative;
+  display: inline;
+}
+
+.mycontainer {
+  position: relative;
+  display: inline;
+  margin-left: 10px;
+}
+
+.officerPlanningTable {
+  margin-top: 20px;
+}
+
+.result_yes_class {
+  background-color: @result_yes;
+}
+
+.result_no_class {
+  background-color: @result_no;
+}
+
+.result_maybe_class {
+  background-color: @result_maybe;
+}
+
+.result_na_class {
+  background-color: @result_na;
+}
+
+.result_empty_class {
+  background-color: @result_empty;
+}
+
+.patientTable {
+  font-size: 24px;
+  margin-left:2%;
+  margin-right:2%;
+}
+
+.footerSpacer {
+  margin-left:2%;
+}
+
+.footerSpacer_2 {
+  margin-left:3%;
+}
+
+.blockDiv {
+  display:block;
+}
+
+.rowMargin {
+  margin-top: 15px;  
+}
+
+.patientRowHeader {
+  margin-top: 20px;
+}
+
+.patientRow {
+  display: block;
+  height: 24px;
+  margin-bottom: 4px;
+}
+
+.tbody:nth-child(even) {
+  background: #f4f4f4;
+}
+
+.patientMargin {
+  margin-bottom: 6px;  
+}
+
+.patientRowSize {
+  margin-bottom: 4px;
+}
+
+.patientName {
+  display: inline-block;
+  width: 185px;
+}
+
+.newPatientName {
+  display: inline-block;
+  width: 300px;
+}
+.patientRoom {
+  display: inline-block;
+  width: 125px;
+}
+.editLabel{
+  display: inline-block;
+  font-weight: bold;
+  width: 75px;
+}
+.patientRoomPopup {
+  display: inline-block;
+  width: 75px;
+}
+
+.patientActive {
+  display:inline-block;
+  width: 60px;
+}
+.handled {
+  display:inline-block;
+  width:80px;  
+}
+
+.patientComment {
+  width: 220px;
+}
+
+.patientQuestion {
+  display: inline-block;
+  width: 460px;
+  white-space: nowrap;
+//  overflow-x: scroll;
+}
+
+.patientQuestionPopup {
+  display: inline-block;
+  width: 300px;
+  white-space: nowrap;
+//  overflow-x: scroll;
+}
+
+.questionResponses {
+  display: inline-block;
+  width: 270px;
+}
+
+.patientAnswer {
+  display: inline-block;
+  width: 68px;
+}
+
+.questionType {
+  display: inline-block;
+  width: 80px;  
+}
+
+.editButton {
+  display: inline-block;
+  width: 70px;  
+}
+
+.askTimeColumn {
+  display: inline-block;
+  margin-left: 10px;
+  width: 75px;  
+}
+.sentColumn {
+  display: inline-block;
+  width: 65px;  
+}
+.waitColumn {
+  display: inline-block;
+  width: 50px;  
+}
+.timeColumn {
+  display: inline-block;
+  width: 55px;
+}
+
+.dateColumn {
+  display: inline-block;
+  width: 55px;
+}
+
+.countColumn {
+  display: inline-block;
+  width: 45px;
+  text-align: center;
+}
+
+.responseColumn {
+  display: inline-block;
+  font-size: 14px;
+  width:95px;
+}
+
+.inlineDiv {
+  display: inline-block;
+}
+
+.columnHeader {
+  font-weight: bold;
+}
+
+.ulStyleNone {
+  list-style: none;
+}
+
+.countColumn {
+  display: inline-block;
+  width:75px;
+}
+
+.askQuestionBody {
+  font-size: 24px;
+}
+
+.askQuestionRow {
+  margin-bottom: 6px;  
+}
+
+.statusColumnSmall {
+  width:120px;  
+}
+
+.statusColumn {
+  margin-left:20px;
+  margin-right:20px;
+  display: inline-block;
+  width:100px;
+  text-align:center;
+}
+
+.patientInfo{
+  margin-left:20px;
+}
+
+.editLine {
+  margin-top: 6px;
+  margin-bottom: 6px;  
+}
+
+.listBorder {
+  border-style: solid;
+  border-size: 2px;
+  border-color: black;  
+}
+
+.scoreLow {
+  background: @result_no;
+  color: white;
+  text-align: center;
+}
+
+.scoreMid {
+  background: @result_maybe;
+  color: black;
+  text-align: center;
+}
+
+.scoreNone {
+  background: @result_na;
+  color: black;
+  text-align: center;
+}
+
+.scoreHigh {
+  background: @result_yes;
+  color: white;
+  text-align: center;
+}
+
+.numShift{
+  text-align: center;
+}
+
+.qStatsWidth {
+  width: 100px;
+}
+
+.numWidth {
+  width: 65px;
+}
+
+// Global Settings
+.rounded (@radius: 6px) {
+  -webkit-border-radius: @radius;
+     -moz-border-radius: @radius;
+      -ms-border-radius: @radius;
+          border-radius: @radius;
+}
+.rounded-left (@radius: 6px) {
+     -webkit-border-top-left-radius: @radius;
+  -webkit-border-bottom-left-radius: @radius;
+        -moz-border-top-left-radius: @radius;
+     -moz-border-bottom-left-radius: @radius;
+         -ms-border-top-left-radius: @radius;
+      -ms-border-bottom-left-radius: @radius;
+             border-top-left-radius: @radius;
+          border-bottom-left-radius: @radius;
+}
+.rounded-right (@radius: 6px) {
+     -webkit-border-top-right-radius: @radius;
+  -webkit-border-bottom-right-radius: @radius;
+        -moz-border-top-right-radius: @radius;
+     -moz-border-bottom-right-radius: @radius;
+         -ms-border-top-right-radius: @radius;
+      -ms-border-bottom-right-radius: @radius;
+             border-top-right-radius: @radius;
+          border-bottom-right-radius: @radius;
+}
+.animate_width (@speed: 0.3s) {
+  -webkit-transition: width @speed ease;                  
+     -moz-transition: width @speed ease;                 
+      -ms-transition: width @speed ease;    
+          transition: width @speed ease; 
+}
+.animate_height (@speed: 0.3s) {
+  -webkit-transition: height @speed ease;                  
+     -moz-transition: height @speed ease;                 
+      -ms-transition: height @speed ease;    
+          transition: height @speed ease; 
+}
+.animate_background(@speed: 0.15s) {
+  -webkit-transition: background @speed ease;
+     -moz-transition: background @speed ease;
+      -ms-transition: background @speed ease;
+          transition: background @speed ease;
+}
+a {
+  color: @primary;
+  text-decoration: none;
+}
+a:hover {
+  color: @primary;
+  text-decoration: none;
+}
+a.active {
+  color: @gray-medium;
+}
+[ui-sref], [ng-click] {
+	cursor: pointer;
+}
+.primary {
+	color: @primary !important;
+}
+.gray-medium {
+	color: @gray-medium !important;
+}
+
+// Bootstrap fivecols
+@media (min-width: 1000px) {
+	.fivecols .col-xs-2 {
+		width: 20%;
+		*width: 20%;
+	}
+}
+
+// Boostrap tables override 
+table td {
+  border-top: 0px !important;
+}
+
+// Page Loading Indicator
+#loader {
+  position: fixed;
+  top: 70px;
+  height: 40px;
+  background: @alert;
+  color: black;
+  width: 123px;
+  left: 50%;  
+  z-index: 1031;
+  margin-left: -50px;
+  text-align: center;
+  padding-top: 10px;
+  -webkit-box-shadow: 0px 8px 25px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow:    0px 8px 25px rgba(50, 50, 50, 0.75);
+  box-shadow:         0px 8px 25px rgba(50, 50, 50, 0.75);
+}
+
+#loader img {
+  float: left; 
+  margin: 2px -12px 0 12px;
+}
+
+// Menu bar
+.menubar {
+  display: table;
+  background-color: @primary;
+  border: 0px;
+  width: 100px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  overflow: auto;
+}
+
+.menu {
+  width: 100px;
+}
+
+.menubar a {
+  color: white;  
+}
+
+.angularView {
+  margin-left: 100px;
+}
+
+.menu>li.active {
+	background: @primary-light;
+}
+.menu>li>a, .menu>li>a {
+	.animate_background;
+}
+.menu>li.active {
+	background: @primary-light;
+}
+.menu>li>a, .menu>li>a {
+	.animate_background;
+}
+.menu>li>a:hover, .menu>li>a:focus {
+  background: @primary-light;
+}
+.menu .open>a, .menu .open>a:hover, .menu .open>a:focus {
+  background: @primary-light;
+}
+
+// Navigation Bar
+.navbarpos {
+  position: fixed;  
+}
+
+.navbar .nav a .caret {
+  border-top-color: white;
+}
+.navbar {
+  background-color: @primary;
+  border: 0px;
+  margin-bottom: 0px;
+  border-radius: 0px;
+}
+.navbar a {
+  color: white;
+}
+.nav>li.active {
+	background: @primary-light;
+}
+.nav>li>a, .nav>li>a {
+	.animate_background;
+}
+.nav>li>a:hover, .nav>li>a:focus {
+  background: @primary-light;
+}
+.nav .open>a, .nav .open>a:hover, .nav .open>a:focus {
+  background: @primary-light;
+}
+.dropdown-menu li > a:hover, .dropdown-menu li > a:focus, .dropdown-submenu:hover > a {
+  background: @primary-light;
+
+}
+
+// Filter Bar
+.filterBar li {
+  float: left;
+  list-style: none;
+  text-transform: uppercase;
+}
+.filterBar > li {
+  margin: 0px 45px 12px -26px;
+}
+.filterBar li a { 
+  color: #aaa; 
+  font-size: 15px;
+}
+.filterBar .caret {
+  border-top-color: #aaa !important;
+}
+
+// Page Header
+.pageHeader {
+  margin-top: 10px;
+  margin-left:2%;
+}
+.pageHeader h2 {
+  text-align: center;
+}
+
+.tabletHeader {
+  margin-top: 55px;
+}
+.pageHeader h1 {
+	height: 40px;
+	margin-top: 0px;
+}
+.pageHeader .breadcrumbs {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	color: @gray-dark;
+}
+.pageHeader .breadcrumbs .link {
+	color: @primary;
+}
+.pageHeader h1 label {
+  font-size: 22px;
+  font-weight: normal;
+  color: @gray-dark;
+}
+// Tables
+.table .thead > div {
+  border: 1px solid @gray-medium;
+  font-weight: bold;
+  font-size: 14px;
+  border-right: 0px;
+  padding: 10px 0 10px 0;
+  text-align: center;
+}
+.table .thead > div label {
+  font-size: 11px;
+  margin-bottom: auto;
+  text-transform: lowercase;
+  color: @gray;
+}
+.table .thead > div:last-child {
+  border-right: 1px solid @gray-medium;
+}
+.table .tbody h3 {
+  margin-top: -5px;
+}
+.table .tbody label {
+	font-size: 10px;
+}
+.table .tbody > div {
+  padding-top: 25px;
+  height: 87px;
+	font-weight: bold;
+}
+.table .tbody2 > div {
+  padding-top: 25px;
+  height: 40px;
+	font-weight: bold;
+}
+.table .tbody3 > div {
+  padding-top: 10px;
+  height: 60px;
+	font-weight: bold;
+}
+.table .tbody4 > div {
+  padding-top: 10px;
+  height: 40px;
+	font-weight: bold;
+}
+.table .divider > div {
+  height: 95px;
+  margin-top: 26px;
+}
+
+.table div[ui-sref] {
+	.animate_background;
+}
+.table div[ui-sref]:hover {
+	background: @gray-light;
+}
+
+.patientTable {
+  width: 90%;
+}
+
+.tab-over {
+  padding-left: 5%;
+  padding-top: 30px;  
+  display: block;
+}
+
+.patientTable  tbody,
+.patientTable  thead {
+  font-size: 16px;
+  margin-right: 4%;
+}
+
+.patientTable .center {
+  text-align: center;
+}
+
+.patientTable th {
+  text-align: center;
+}
+
+.patientTable th,
+.patientTable td,
+.patientTable tbody,
+table .patientTable {
+  border-collapse: collapse !important;
+  border: 1px solid #d8d8d8;
+}
+  
+.patientTable th
+.patientTable .center {
+  text-align: center;
+}
+
+// Maps
+.mapWrapper {
+  position: relative;
+  padding-top: 30px;
+}
+.mapWrapper .enforceMarker {
+  color: white;
+  font-size: 15px !important;
+  text-align: center;
+  padding-top: 30px;
+  padding-left: 3px;
+  text-align: center;
+}
+
+.mapWrapper .enforceMarkerSmall {
+  color: white;
+  font-size: 12px !important;
+  text-align: center;
+  padding-top: 30px;
+  padding-left: 3px;
+  text-align: center;
+}
+.mapWrapper .mapControls {
+  .animate_height;
+  height: 30px;
+  margin-top: -30px;
+  position: absolute;
+  z-index: 100;
+  left: 15px;
+  right: 15px;
+  background: #222222;
+  opacity: 0.75;
+}
+.mapWrapper .mapControls .open {
+  text-align: center;
+  font-size: 12px;
+  height: 30px;
+  width: 100%;
+  color: white;
+  cursor: pointer;
+  margin-top: 7px;
+}
+.mapWrapper .mapControls .controls {
+  display: none;
+  color: #eeeeee; 
+  margin-left: 20px
+}
+.mapWrapper .mapControls .controls label {
+  font-weight: normal;
+  font-size: 12px;
+}
+.mapWrapper .mapControls .controls title {
+  font-weight: bold;
+  font-size: 14px;
+}
+.mapFilters {
+  border-top: 1px solid @gray-medium;
+  padding-top: 21px;
+  margin: 37px 0 0 0;
+}
+.mapPopupWrapper {
+  height: 70px;
+  width: 150px; 
+  overflow-x: hidden;
+  overflow-y: scroll; 
+}
+.mapPopupWrapper::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+.mapPopupWrapper::-webkit-scrollbar:vertical {
+  width: 11px;
+}
+.mapPopupWrapper::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  border: 2px solid white; 
+  background-color: rgba(0, 0, 0, .5);
+}
+.mapPopupWrapper::-webkit-scrollbar-track { 
+  background-color: #fff; 
+  border-radius: 8px; 
+} 
+.ui-autocomplete-category {
+  font-weight: bold;
+  padding: .2em .4em;
+  margin: .8em 0 .2em;
+  line-height: 1.5;
+}
+
+// Page Body
+.angularView {
+  min-height: 100px;
+}
+.angularView .mapTableToggle {
+  margin-bottom: 15px;
+}
+.notes {
+  padding-top: 18px;
+  padding-bottom: 28px;
+  border-top: 1px solid @gray-medium;
+  color: @gray;
+}
+.notes .tag {
+  background: @gray-light;
+  padding: 5px;
+  margin-right: 5px;
+}
+.notes h4 {
+  color: @primary;
+}
+.notes label {
+  color: @gray;
+  font-size: 12px;
+}
+.note_box {
+  width:100%;
+  height:75px;
+}
+.notes .tagger {
+  margin-bottom: 20px;
+}
+.divider {
+  border-top: 1px solid @gray-medium;
+}
+.nolink {
+  cursor: default !important;
+}
+.nolink:hover {
+  background: transparent !important;
+}
+
+// Page Footer
+footer {
+	text-align: center;
+	font-size: 12px;
+	margin-bottom: 50px;
+}
+
+
+
+// Dynamic Columns
+#columns {
+  padding-left: 4px;
+  position: absolute;
+  right: -1px;
+  top: -300px;
+  height: 300px;
+  width: 310px;
+  display:none;
+}
+#columns .slideContainer {
+  position:absolute;
+  bottom:0px;
+  height: 300px;
+  width: 310px;
+  background: white;
+  border: 1px solid #cccccc;
+  box-shadow: 0px 0px 21px #666;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  display:none;
+}
+#columns::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+#columns::-webkit-scrollbar:vertical {
+  width: 11px;
+}
+#columns::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  border: 2px solid white; 
+  background-color: rgba(0, 0, 0, .5);
+}
+#columns::-webkit-scrollbar-track { 
+  background-color: #fff; 
+  border-radius: 8px; 
+} 
+#columns td {
+  text-align:left;
+  font-weight:normal;
+}
+.nav-tabs > li > a:hover,
+.nav-tabs > li > a:focus{
+  background-color: #eeeeee;  
+}     
+
+
+// Officer Planning
+
+.dayClearPopup {
+  position: absolute;
+  margin-top: -50px;
+  margin-left: 30px;
+  font-size: 12px;
+}
+
+.dayClearAllPopup {
+  position: absolute;
+  margin-top: -30px;
+  margin-left: 20px;
+  font-size: 12px;
+}
+
+.dayClearOfficerPopup {
+  position: absolute;
+  margin-top: -30px;
+  margin-left: 20px;
+  font-size: 12px;
+}
+
+.shiftSelectPopup {
+  position: absolute;
+  margin-top: -30px;
+  font-size: 12px;
+  background-color: #eeeeee;
+  border: 2px;
+  border-color: black;
+  border-style: solid;
+  list-style-type: none;
+  text-align: left;
+}
+
+.shiftSelectPopup li {
+  margin-left: 0px;
+}
+
+.shiftSelectPopup :hover {
+  background-color: #222222;
+}
+
+.officerName {
+  display: inline-block;
+  width: 112px;
+  height: 23px;
+  font-weight: bold;
+  position: relative;
+}
+
+.officerNameHeader {
+  display: inline-block;
+  text-align: left;
+  width: 102px;
+  font-weight: bold;
+  height: 44px;
+}
+
+.officerNameHeaderShort {
+  vertical-align:middle;
+}
+
+.officerWeekHeader {
+  display: inline-block;
+  width: 65px;
+  text-align: center;
+  font-weight: bold;
+  height: 44px;
+}
+
+.officerDaySpacer {
+  display: inline-block;
+  width: 65px;     
+}
+
+.officerHoursSpacer{
+  text-align:right;
+  font-weight: bold;
+  margin-left: -25px;
+}
+
+.offficerShiftsName {
+  margin-left: 15px;
+  width: 60px;
+}
+
+.offficerShiftsTotal {
+  margin-left: 0px;
+  text-align:left;
+  width: 75px;
+}
+
+.officerTotalDaySpacer {
+  text-align:right;
+}
+
+.officerTotalSpacer {
+  display:inline-block;
+  height: 70px;
+}
+
+.officerTotalDaySpacerTot{
+  margin-left: 10px;
+  text-align:right;
+  font-weight: bold;
+}
+
+.totalTopMargin {
+  margin-top:10px;
+}
