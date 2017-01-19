@@ -1,7 +1,7 @@
 var fs = require('fs');
 
-var approvalFn = "./client/views/layouts/terms-of-use.pdf";
-var privacyPolicyFn = "./client/views/layouts/privacy-policy.pdf";
+var termsOfUseFn = "./client/views/layouts/terms-of-use.html";
+var privacyPolicyFn = "./client/views/layouts/privacy-policy.html";
 
 exports.readFileSync = function(fn) {
   console.log("*** read file Sync: " + fn);
@@ -24,8 +24,8 @@ exports.readJsonFile = function(fn, resultFn, errorFn) {
 exports.privacyPolicy = function(req, res) {
   var data;
   try {
-    data = fs.readFileSync(approvalFn);
-    res.writeHead(200, {'Content-Type': 'application/pdf' });
+    data = fs.readFileSync(privacyPolicyFn);
+    res.writeHead(200, {'Content-Type': 'text/html' });
     res.end(data);  
     return;
   } catch (e) {
@@ -37,8 +37,8 @@ exports.privacyPolicy = function(req, res) {
 exports.termsOfUse = function(req, res) {
   var data;
   try {
-    data = fs.readFileSync(privacyPolicyFn);
-    res.writeHead(200, {'Content-Type': 'application/pdf' });
+    data = fs.readFileSync(termsOfUseFn);
+    res.writeHead(200, {'Content-Type': 'text/html' });
     res.end(data);  
     return;
   } catch (e) {
