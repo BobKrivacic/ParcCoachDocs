@@ -27,7 +27,7 @@ deviceApp.use(express.static(path.join(__dirname, '/client')));
 deviceApp.use(deviceApp.router);
 
 /**
- * Routes for API calls
+ * Routes for API callsx
  */
 
 var validServerTokens = ["089uq34oijoiqeuqiur"];
