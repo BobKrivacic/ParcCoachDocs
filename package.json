@@ -9,5 +9,9 @@
     "ogr2ogr" : "latest",
     "base64url" : "latest",
     "basic-auth":"latest"
+  },
+  "engines": {
+    "node": "8.1.4",
+    "npm": "2.14.4"
   }
 }
